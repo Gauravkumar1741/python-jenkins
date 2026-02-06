@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/your-username/jenkins-python-project.git'
-            }
-        }
-
         stage('Setup Environment') {
             steps {
                 bat 'python -m venv venv'
